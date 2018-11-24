@@ -1,0 +1,5 @@
+com\rick\swagger_demo\SwaggerDemoApplication.class
+com\rick\swagger_demo\model\User.class
+com\rick\swagger_demo\controller\DemoController.class
+com\rick\swagger_demo\Swagger2.class
+META-INF\spring-configuration-metadata.json

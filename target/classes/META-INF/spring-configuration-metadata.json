@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.rick.swagger_demo.model.User",
+      "name": "user",
+      "type": "com.rick.swagger_demo.model.User"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.rick.swagger_demo.model.User",
+      "name": "user.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.rick.swagger_demo.model.User",
+      "name": "user.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.rick.swagger_demo.model.User",
+      "name": "user.phone",
+      "type": "java.lang.String"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+11:56:10.746 [main] INFO  com.rick.swagger_demo.SwaggerDemoApplication - Starting SwaggerDemoApplication on Ric-PC with PID 9664 (D:\RickDevelop\swagger_demo\target\classes started by admin in D:\RickDevelop\swagger_demo)
+11:56:10.747 [main] INFO  com.rick.swagger_demo.SwaggerDemoApplication - The following profiles are active: dev
+11:56:10.791 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ef6ae06: startup date [Sat Nov 24 11:56:10 CST 2018]; root of context hierarchy
+11:56:11.984 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$306e84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:56:12.098 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7fb0bbb6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:56:12.465 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:56:12.477 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:56:12.485 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:56:12.485 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+11:56:12.491 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files\nodejs\;E:\python11;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\SysWOW64%CATALINA_HOME%\lib;%CATALINA_HOME%\bin ;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\Desktop\wget;.]
+11:56:12.580 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springboot] - Initializing Spring embedded WebApplicationContext
+11:56:12.580 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1789 ms
+11:56:12.676 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+11:56:12.677 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+11:56:12.680 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:56:12.680 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:56:12.680 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:56:12.680 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:56:12.680 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+11:56:12.866 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:56:13.019 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:56:13.799 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/demo/hello],methods=[GET]}" onto public java.lang.String com.rick.swagger_demo.controller.DemoController.demoTest(java.lang.String)
+11:56:13.799 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/demo/helloModel],methods=[POST]}" onto public java.lang.String com.rick.swagger_demo.controller.DemoController.demoPostTest(com.rick.swagger_demo.model.User)
+11:56:13.800 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/demo/saveStudent]}" onto public java.lang.String com.rick.swagger_demo.controller.DemoController.saveStudent(com.rick.swagger_demo.model.Student)
+11:56:13.800 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+11:56:13.803 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+11:56:13.803 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+11:56:13.803 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+11:56:13.808 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:56:13.808 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:56:14.037 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:56:14.265 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ef6ae06: startup date [Sat Nov 24 11:56:10 CST 2018]; root of context hierarchy
+11:56:14.326 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:56:14.326 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:56:14.576 [main] INFO  org.springframework.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ef6ae06: startup date [Sat Nov 24 11:56:10 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+11:56:14.577 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+11:56:14.843 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:56:14.845 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+11:56:14.845 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11:56:14.852 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+11:56:14.853 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+11:56:14.884 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+11:56:14.903 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+11:56:14.912 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+11:56:14.915 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoPostTest was demo-controller
+11:56:14.916 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Request mapping: demoPostTest belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.rick.swagger_demo.controller.DemoController}]] 
+11:56:14.917 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoTest was demo-controller
+11:56:14.917 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Request mapping: demoTest belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.rick.swagger_demo.controller.DemoController}]] 
+11:56:14.917 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:14.917 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Request mapping: saveStudent belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.rick.swagger_demo.controller.DemoController}]] 
+11:56:14.920 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/demo-controller Description: demo-controller Position: 0
+11:56:14.938 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+11:56:14.938 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+11:56:14.943 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+11:56:14.943 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+11:56:14.947 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: com.rick.swagger_demo.model.User(false)
+11:56:14.947 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.rick.swagger_demo.model.User(false)
+11:56:14.948 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator - Cache key generated: com.rick.swagger_demo.model.User(false)
+11:56:14.948 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.rick.swagger_demo.model.User(false)
+11:56:14.983 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: com.rick.swagger_demo.model.User(false)
+11:56:14.984 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.rick.swagger_demo.model.User(false)
+11:56:14.984 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator - Cache key generated: com.rick.swagger_demo.model.User(false)
+11:56:14.984 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.rick.swagger_demo.model.User(false)
+11:56:14.985 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /demo/helloModel.com.rick.swagger_demo.controller.DemoController.demoPostTest.DefaultGenericTypeNamingStrategy
+11:56:14.985 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /demo/helloModel.com.rick.swagger_demo.controller.DemoController.demoPostTest.DefaultGenericTypeNamingStrategy
+11:56:14.998 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoPostTest was demo-controller
+11:56:15.010 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoPostTest was demo-controller
+11:56:15.018 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+11:56:15.018 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+11:56:15.018 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+11:56:15.018 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+11:56:15.018 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /demo/hello.com.rick.swagger_demo.controller.DemoController.demoTest.DefaultGenericTypeNamingStrategy
+11:56:15.018 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /demo/hello.com.rick.swagger_demo.controller.DemoController.demoTest.DefaultGenericTypeNamingStrategy
+11:56:15.020 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoTest was demo-controller
+11:56:15.022 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoTest was demo-controller
+11:56:15.023 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+11:56:15.023 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+11:56:15.024 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+11:56:15.024 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+11:56:15.024 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /demo/saveStudent.com.rick.swagger_demo.controller.DemoController.saveStudent.DefaultGenericTypeNamingStrategy
+11:56:15.024 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /demo/saveStudent.com.rick.swagger_demo.controller.DemoController.saveStudent.DefaultGenericTypeNamingStrategy
+11:56:15.025 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.026 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.027 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.027 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.028 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.029 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.030 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.030 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.031 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.032 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.033 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.033 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.034 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.034 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.036 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.036 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+11:56:15.053 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:56:15.066 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:56:15.084 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/springboot'
+11:56:15.091 [main] INFO  com.rick.swagger_demo.SwaggerDemoApplication - Started SwaggerDemoApplication in 4.746 seconds (JVM running for 5.96)
+11:56:21.261 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springboot] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:56:21.261 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:56:21.281 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+11:57:03.493 [http-nio-8086-exec-5] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+12:17:00.604 [main] INFO  com.rick.swagger_demo.SwaggerDemoApplication - Starting SwaggerDemoApplication on Ric-PC with PID 3120 (D:\RickDevelop\swagger_demo\target\classes started by admin in D:\RickDevelop\swagger_demo)
+12:17:00.606 [main] INFO  com.rick.swagger_demo.SwaggerDemoApplication - The following profiles are active: dev
+12:17:00.647 [main] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@604c5de8: startup date [Sat Nov 24 12:17:00 CST 2018]; root of context hierarchy
+12:17:01.753 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$956d366f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:17:01.865 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$14ed83a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:17:02.211 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:17:02.223 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:17:02.232 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+12:17:02.232 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+12:17:02.237 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files\nodejs\;E:\python11;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\SysWOW64%CATALINA_HOME%\lib;%CATALINA_HOME%\bin ;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\Desktop\wget;.]
+12:17:02.335 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springboot] - Initializing Spring embedded WebApplicationContext
+12:17:02.335 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1688 ms
+12:17:02.435 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+12:17:02.437 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+12:17:02.441 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+12:17:02.441 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+12:17:02.441 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+12:17:02.441 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+12:17:02.441 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+12:17:02.548 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:17:02.778 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+12:17:03.497 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/demo/hello],methods=[GET]}" onto public java.lang.String com.rick.swagger_demo.controller.DemoController.demoTest(java.lang.String)
+12:17:03.498 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/demo/helloModel],methods=[POST]}" onto public java.lang.String com.rick.swagger_demo.controller.DemoController.demoPostTest(com.rick.swagger_demo.model.User)
+12:17:03.498 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/demo/saveStudent]}" onto public java.lang.String com.rick.swagger_demo.controller.DemoController.saveStudent(com.rick.swagger_demo.model.Student)
+12:17:03.499 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+12:17:03.501 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+12:17:03.501 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+12:17:03.502 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+12:17:03.504 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+12:17:03.504 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+12:17:03.717 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:17:03.918 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@604c5de8: startup date [Sat Nov 24 12:17:00 CST 2018]; root of context hierarchy
+12:17:03.970 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:17:03.970 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:17:04.160 [main] INFO  org.springframework.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@604c5de8: startup date [Sat Nov 24 12:17:00 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+12:17:04.161 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+12:17:04.405 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12:17:04.407 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+12:17:04.407 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+12:17:04.414 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+12:17:04.414 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+12:17:04.436 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+12:17:04.453 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+12:17:04.462 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+12:17:04.465 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoPostTest was demo-controller
+12:17:04.466 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Request mapping: demoPostTest belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.rick.swagger_demo.controller.DemoController}]] 
+12:17:04.467 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoTest was demo-controller
+12:17:04.467 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Request mapping: demoTest belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.rick.swagger_demo.controller.DemoController}]] 
+12:17:04.467 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.467 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Request mapping: saveStudent belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.rick.swagger_demo.controller.DemoController}]] 
+12:17:04.472 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Created resource listing Path: /default/demo-controller Description: demo-controller Position: 0
+12:17:04.494 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+12:17:04.494 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+12:17:04.500 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+12:17:04.500 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+12:17:04.504 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: com.rick.swagger_demo.model.User(false)
+12:17:04.504 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.rick.swagger_demo.model.User(false)
+12:17:04.505 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator - Cache key generated: com.rick.swagger_demo.model.User(false)
+12:17:04.505 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.rick.swagger_demo.model.User(false)
+12:17:04.538 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: com.rick.swagger_demo.model.User(false)
+12:17:04.538 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.rick.swagger_demo.model.User(false)
+12:17:04.538 [main] INFO  springfox.documentation.schema.property.ModelPropertiesKeyGenerator - Cache key generated: com.rick.swagger_demo.model.User(false)
+12:17:04.538 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.rick.swagger_demo.model.User(false)
+12:17:04.539 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /demo/helloModel.com.rick.swagger_demo.controller.DemoController.demoPostTest.DefaultGenericTypeNamingStrategy
+12:17:04.540 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /demo/helloModel.com.rick.swagger_demo.controller.DemoController.demoPostTest.DefaultGenericTypeNamingStrategy
+12:17:04.551 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoPostTest was demo-controller
+12:17:04.562 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoPostTest was demo-controller
+12:17:04.569 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+12:17:04.569 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+12:17:04.569 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+12:17:04.569 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+12:17:04.569 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /demo/hello.com.rick.swagger_demo.controller.DemoController.demoTest.DefaultGenericTypeNamingStrategy
+12:17:04.569 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /demo/hello.com.rick.swagger_demo.controller.DemoController.demoTest.DefaultGenericTypeNamingStrategy
+12:17:04.570 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoTest was demo-controller
+12:17:04.571 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method demoTest was demo-controller
+12:17:04.572 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+12:17:04.572 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+12:17:04.572 [main] INFO  springfox.documentation.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+12:17:04.572 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+12:17:04.572 [main] INFO  springfox.documentation.spring.web.OperationsKeyGenerator - Cache key generated: /demo/saveStudent.com.rick.swagger_demo.controller.DemoController.saveStudent.DefaultGenericTypeNamingStrategy
+12:17:04.572 [main] INFO  springfox.documentation.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /demo/saveStudent.com.rick.swagger_demo.controller.DemoController.saveStudent.DefaultGenericTypeNamingStrategy
+12:17:04.573 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.574 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.575 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.576 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.577 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.578 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.579 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.580 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.581 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.582 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.583 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.583 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.584 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.585 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.586 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.586 [main] INFO  springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - Group for method saveStudent was demo-controller
+12:17:04.602 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:17:04.614 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+12:17:04.633 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/springboot'
+12:17:04.637 [main] INFO  com.rick.swagger_demo.SwaggerDemoApplication - Started SwaggerDemoApplication in 4.716 seconds (JVM running for 5.501)
