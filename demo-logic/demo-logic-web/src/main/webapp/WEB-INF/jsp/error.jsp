@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>ERROR</title>
 </head>
 <body>
      <h1 style="color: red;font-family: 'Roboto', sans-serif;text-align: center">保存失败</h1>
+     <div style="text-align: center"><a href="index">返回首页</a></div>
 </body>
 </html>
