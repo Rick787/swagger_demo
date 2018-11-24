@@ -1,0 +1,15 @@
+15:05:58.305 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field logicService in com.rick.demologicweb.controller.LogicController required a bean of type 'com.rick.demoLogic.service.ILogicService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.rick.demoLogic.service.ILogicService' in your configuration.
+
