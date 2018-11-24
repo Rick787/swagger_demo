@@ -21,6 +21,11 @@
 			<artifactId>demo-resource</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.rick</groupId>
+			<artifactId>demo-logic-service-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 </project>

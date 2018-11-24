@@ -15,14 +15,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.rick</groupId>
-			<artifactId>demo-logic-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
-
 	<modules>
 		<module>demo-logic-web</module>
 		<module>demo-logic-service-api</module>
