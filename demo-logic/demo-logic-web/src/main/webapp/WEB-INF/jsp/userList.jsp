@@ -19,6 +19,7 @@
           <td>age</td>
           <td>address</td>
           <td>remark</td>
+          <td>删除</td>
       </tr>
       <c:forEach items="${userList}" var="user">
           <tr>
@@ -27,6 +28,7 @@
               <td>${user.age}</td>
               <td>${user.address}</td>
               <td>${user.remark}</td>
+              <td><a href="delete.do?id=${user.id}"><b style="color: red">DELETE</b></a></td>
           </tr>
       </c:forEach>
   </table>

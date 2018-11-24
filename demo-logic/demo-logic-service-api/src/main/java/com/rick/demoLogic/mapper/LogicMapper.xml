@@ -2,14 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rick.demoLogic.mapper.LogicMapper">
 
-    <!-- 数据结果集 -->
     <resultMap type="com.rick.demoLogic.model.LogicUser" id="resultMap">
         <result property="id" column="id" jdbcType="INTEGER" />
         <result property="name" column="name" jdbcType="VARCHAR" />
         <result property="age" column="age" jdbcType="INTEGER" />
         <result property="address" column="address" jdbcType="VARCHAR" />
         <result property="remark" column="remark" jdbcType="VARCHAR" />
-        <result property="delFlag" column="del_flag" jdbcType="VARCHAR" />
+        <result property="delFlag" column="del_flag" jdbcType="INTEGER" />
     </resultMap>
+
+    <update id="updateUserById" parameterType="integer">
+        UPDATE student SET del_flag = 1 WHERE id = #{id}
+    </update>
+
+
 
 </mapper>

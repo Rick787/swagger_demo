@@ -31,7 +31,7 @@ public class LogicUser extends Model<LogicUser>{
 
     /**  **/
     @TableField("del_flag")
-    private String delFlag;
+    private Integer delFlag;
 
 
     /**
@@ -129,7 +129,7 @@ public class LogicUser extends Model<LogicUser>{
      *
      * @return
      */
-    public String getDelFlag(){
+    public Integer getDelFlag(){
         return delFlag;
     }
 
@@ -138,7 +138,7 @@ public class LogicUser extends Model<LogicUser>{
      *
      * @param delFlag
      */
-    public void setDelFlag(String delFlag){
+    public void setDelFlag(Integer delFlag){
         this.delFlag = delFlag;
     }
 
