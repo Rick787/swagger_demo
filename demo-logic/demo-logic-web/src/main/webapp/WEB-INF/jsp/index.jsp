@@ -12,6 +12,9 @@
 </head>
 <body>
 <h1 style="font-family: 'Adobe Garamond Pro Bold';color: chocolate;text-align: center">欢迎来到rick的小家园</h1>
+<div style="text-align: center">
+    <b style="font-size: larger">尊敬的 <b style="color: chocolate">${user.nickname}</b>, 您好</b>
+</div>
 <a href="saveUser.do"><b style="font-family: 'Adobe Ming Std L'">JUMP & JUMP</b></a>
 <a href="querylist.do"><b style="font-family: 'Adobe Ming Std L'">QUERY & LIST</b></a>
 
