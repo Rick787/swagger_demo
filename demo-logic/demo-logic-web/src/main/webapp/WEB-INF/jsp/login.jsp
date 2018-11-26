@@ -9,9 +9,10 @@
 <html>
 <head>
     <title>LOGIN</title>
+    <script type="text/javascript" src="/statics/js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-    <form action = "login.do" method="post">
+    <form id="formId">
         <table align="center" style="margin-top: 20px">
             <div style="text-align: center">
                 <h2 style="color: darkgreen">用户登录</h2>
@@ -26,12 +27,33 @@
             <tr/>
             <tr>
                 <td colspan="2" ,align="center">
-                    <input type="submit" value="登录"/>
+                    <input type="button" value="登录" onclick="submitForm()"/>
                     <input type="reset" value="清空"/>
                 </td>
             </tr>
         </table>
     </form>
+
+<script>
+    function submitForm() {
+        $.ajax({
+            type : 'post',
+            url : 'login.do',
+            data : $("#formId").serialize(),
+            dataType: 'json',
+            error: function(data){
+                alert(data)
+            },
+            success: function (data) {
+                if(data != -1){
+                    window.location.href = "loginSuccess.do?id="+data;
+                }else {
+                    alert("用户名或者密码错误");
+                }
+            }
+        })
+    }
+</script>
 
 </body>
 </html>

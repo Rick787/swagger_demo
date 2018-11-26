@@ -6,6 +6,7 @@ import com.rick.demoLogic.model.LogicUser;
 import com.rick.demoLogic.model.User;
 import com.rick.demoLogic.service.ILogicService;
 import com.rick.demoLogic.service.IUserService;
+import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -68,18 +69,25 @@ public class LogicController {
     }
 
     @RequestMapping("/login.do")
-    public String login(Model model, String username, String password) {
+    @ResponseBody
+    public Integer login(Model model, String username, String password) {
         Wrapper<User> wrapper = new EntityWrapper<>();
         wrapper.eq("del_flag", 0);
         wrapper.eq("username", username);
         wrapper.eq("password", password);
         User user = userService.selectOne(wrapper);
         if (user != null){
-            model.addAttribute("user", user);
-            return "index";
-        }else {
-            return "error";
+            return user.getId();
+        } else {
+            return -1;
         }
+    }
+
+    @RequestMapping("/loginSuccess.do")
+    public String loginSuccess(Model model,Integer id){
+        User user = userService.selectById(id);
+        model.addAttribute("user", user);
+        return "index";
     }
 
 }
