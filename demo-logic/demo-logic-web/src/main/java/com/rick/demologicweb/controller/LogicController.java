@@ -90,4 +90,10 @@ public class LogicController {
         return "index";
     }
 
+    @RequestMapping("/newUser.do")
+    public String saveNewUser(User user){
+        userService.insert(user);
+        return "login";
+    }
+
 }

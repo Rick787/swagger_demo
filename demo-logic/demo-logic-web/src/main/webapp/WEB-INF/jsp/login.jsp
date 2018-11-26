@@ -28,13 +28,14 @@
             <tr>
                 <td colspan="2" ,align="center">
                     <input type="button" value="登录" onclick="submitForm()"/>
-                    <input type="reset" value="清空"/>
+                    <a href="register.do"><input type="button" value="注册新用户"></a></td>
                 </td>
             </tr>
         </table>
     </form>
 
 <script>
+
     function submitForm() {
         $.ajax({
             type : 'post',
