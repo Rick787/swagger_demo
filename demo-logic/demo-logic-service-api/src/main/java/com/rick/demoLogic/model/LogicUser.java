@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.enums.IdType;
 
 import java.io.Serializable;
 
-@TableName("Student")
+@TableName("student")
 public class LogicUser extends Model<LogicUser>{
 
     private static final long serialVersionUID = 1L;
