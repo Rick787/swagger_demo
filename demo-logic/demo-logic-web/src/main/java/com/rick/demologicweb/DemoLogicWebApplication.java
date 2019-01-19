@@ -12,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan("com.rick.demoLogic.mapper")
 public class DemoLogicWebApplication extends SpringBootServletInitializer {
 
+    //123
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(DemoLogicWebApplication.class);
