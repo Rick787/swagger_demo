@@ -8,9 +8,9 @@ spring:
     druid:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://rm-wz96f3y7f1u6y4o9jko.mysql.rds.aliyuncs.com/demo_rick_database?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai
-        username: rick77
-        password: rick777!
+        url: jdbc:mysql://localhost:3306/demo_rick_database?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai
+        username: root
+        password: 123456
   mvc:
     view:
       prefix: /WEB-INF/jsp/
