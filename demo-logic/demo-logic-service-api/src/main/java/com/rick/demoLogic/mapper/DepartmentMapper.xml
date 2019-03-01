@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rick.demoLogic.mapper.DepartmentMapper">
+
+    <!-- 数据结果集 -->
+    <resultMap type="com.rick.demoLogic.model.DepartmentVO" id="resultMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="parentId" column="parent_id" jdbcType="INTEGER"/>
+        <result property="corpId" column="corp_id" jdbcType="INTEGER"/>
+        <result property="creator" column="creator" jdbcType="INTEGER"/>
+        <result property="modifier" column="modifier" jdbcType="INTEGER"/>
+        <result property="fullPath" column="full_path" jdbcType="VARCHAR"/>
+        <result property="level" column="level" jdbcType="INTEGER"/>
+        <result property="code" column="code" jdbcType="VARCHAR"/>
+        <result property="isDel" column="is_del" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <select id="selectListByParentCode" parameterType="map" resultType="com.rick.demoLogic.model.DepartmentVO">
+        SELECT * FROM pub_department WHERE corp_id = #{corpId} AND is_del = 0 AND code like CONCAT(#{code},'%')
+    </select>
+
+    <select id="queryTreesByCorpId" parameterType="integer" resultMap="resultMap">
+        SELECT * FROM pub_department WHERE corp_id = #{corpId} AND is_del = 0 ORDER BY parent_id ASC
+    </select>
+
+
+</mapper>

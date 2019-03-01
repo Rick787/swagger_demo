@@ -1,0 +1,30 @@
+server:
+  port: 8087
+
+name: haha
+
+spring:
+  datasource:
+    druid:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.1.8:3306/test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai
+        username: root
+        password: 123456
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 200MB
+
+logging:
+  config: classpath:config/logback.xml
+
+
+
+
+
+
